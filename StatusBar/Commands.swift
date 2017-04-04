@@ -9,5 +9,8 @@
 import Cocoa
 
 class Commands: NSObject {
-
+    
+    let sharedInstance = Commands()
+    
+    
 }
