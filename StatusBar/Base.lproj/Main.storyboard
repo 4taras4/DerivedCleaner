@@ -12,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="StatusBar" id="1Xt-HY-uBw">
+                            <menuItem title="Swabber" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="StatusBar" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Swabber" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About StatusBar" id="5kV-Vb-QxS">
+                                        <menuItem title="About Swabber" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide StatusBar" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Swabber" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit StatusBar" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Swabber" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -75,7 +75,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="StatusBar Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Swabber Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -89,7 +89,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="StatusBar" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Swabber" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-64" y="-149"/>
@@ -98,10 +98,10 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="Preference" id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" identifier="settings" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" identifier="settings" title="Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="376" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -110,20 +110,91 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="23" y="250"/>
         </scene>
         <!--Prefferences-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Prefferences" id="XfG-lQ-9wD" customClass="ViewController" customModule="StatusBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Prefferences" id="XfG-lQ-9wD" customClass="ViewController" customModule="Swabber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="132"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F8G-qt-gJf">
+                                <rect key="frame" x="14" y="13" width="81" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="8vN-8U-fa4"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DZr-Gz-Gwo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="defaultAction:" target="XfG-lQ-9wD" id="ENT-7I-Z0o"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvr-Pb-MTy">
+                                <rect key="frame" x="18" y="95" width="309" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="yIj-HK-l59"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Set path to XCode DerivedData folder" id="3W5-Qs-GhT">
+                                    <font key="font" size="18" name="HelveticaNeue"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJc-cw-UEw">
+                                <rect key="frame" x="18" y="62" width="44" height="25"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Path:" id="TO0-1w-X8m">
+                                    <font key="font" size="17" name="HelveticaNeue"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5i-Ed-8wt">
+                                <rect key="frame" x="68" y="60" width="257" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8Uo-eO-zX0">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHk-ea-hiF">
+                                <rect key="frame" x="250" y="13" width="81" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="LNT-HX-4AA"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pqa-fh-ezX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveAction:" target="XfG-lQ-9wD" id="cTs-Gx-lNi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jvr-Pb-MTy" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="Jde-BT-8GX"/>
+                            <constraint firstItem="F8G-qt-gJf" firstAttribute="baseline" secondItem="YHk-ea-hiF" secondAttribute="baseline" id="LRw-qn-hm8"/>
+                            <constraint firstItem="jvr-Pb-MTy" firstAttribute="trailing" secondItem="d5i-Ed-8wt" secondAttribute="trailing" id="QTc-MC-FUk"/>
+                            <constraint firstItem="jvr-Pb-MTy" firstAttribute="leading" secondItem="gJc-cw-UEw" secondAttribute="leading" id="RUK-27-jST"/>
+                            <constraint firstItem="d5i-Ed-8wt" firstAttribute="leading" secondItem="gJc-cw-UEw" secondAttribute="trailing" constant="8" symbolic="YES" id="RdP-mZ-z1G"/>
+                            <constraint firstItem="F8G-qt-gJf" firstAttribute="top" secondItem="d5i-Ed-8wt" secondAttribute="bottom" constant="19" id="adI-11-0mx"/>
+                            <constraint firstItem="gJc-cw-UEw" firstAttribute="baseline" secondItem="d5i-Ed-8wt" secondAttribute="baseline" id="ahD-uC-BBN"/>
+                            <constraint firstItem="d5i-Ed-8wt" firstAttribute="trailing" secondItem="YHk-ea-hiF" secondAttribute="trailing" id="dPA-Sh-5aK"/>
+                            <constraint firstItem="gJc-cw-UEw" firstAttribute="top" secondItem="jvr-Pb-MTy" secondAttribute="bottom" constant="8" symbolic="YES" id="hwK-Ae-Hfs"/>
+                            <constraint firstAttribute="bottom" secondItem="F8G-qt-gJf" secondAttribute="bottom" constant="20" symbolic="YES" id="tab-On-q11"/>
+                            <constraint firstItem="gJc-cw-UEw" firstAttribute="leading" secondItem="F8G-qt-gJf" secondAttribute="leading" id="v3i-FN-1lR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pathTextField" destination="d5i-Ed-8wt" id="a26-bT-da4"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="23.5" y="623"/>
         </scene>
     </scenes>
 </document>
