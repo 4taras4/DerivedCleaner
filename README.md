@@ -9,11 +9,6 @@ Derived cleaner for XCode 7/8
 Use [Swabber](https://github.com/4taras4/DerivedCleaner/blob/master/Compiled/Swabber.dmg) to clearing cache from folders while developing for iOS, watchOS or tvOS. Swabber is a free and open source.
 Works without any problems with Xcode 8! :)
 
-Like this app? Write a post about it! Or just share link to this page on Twitter/Facebook/etc.
-
-- CMD + Shift + Y - to ClearingDerived data in Xcode.
-
-
 #### Suppots
 If you want help or add new features to app please create issue or write me at email or create new pull-request on new branch.
 
